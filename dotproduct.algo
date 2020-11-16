@@ -1,0 +1,36 @@
+FUNCTION dot_product() : INTEGER
+VAR
+    
+    V1: ARRAY_OF INTEGER;
+    V2: ARRAY_OF INTEGER;
+    ps; i:INTEGER=0
+
+
+BEGIN
+    IF (V1.length<>V2.length) THEN
+        Write ('not able to calculate the product')
+    END_IF
+   
+    WHILE (i <V1.length ) DO
+        ps := ps + v1[i]*v2[i];
+    END_WHILE
+ 
+    RETURN ps ;
+END
+
+
+ALGORITHM product
+
+BEGIN
+    read(v1)
+    read(v2)
+    ps := dot_product(V1,V2);
+                 IF (ps=0) THEN
+                   Write('vectors are orthogonal')
+            ELSE
+            Write  ('vectors are not orthogonal')
+
+                 END_IF
+        
+    
+END
